@@ -10,12 +10,13 @@ Si el tamaño final es menor o igual que la cadena inicial, se devuelve sin toca
 */
 
 function paddingLeft(word, number) {
-	var word = [];
+	var wordSplitted = word.split();
 	var spaces = number - word.length;
 	if (spaces > 0) {
 		for (var i = 0; i < spaces; i++) {
-			word.unshift(' ');
+			wordSplitted.unshift(' ');
 		}
+		return wordSplitted.join('');
 	}
 	return word;
 }
