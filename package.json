@@ -4,7 +4,7 @@
   "description": "padding",
   "main": "index.js",
   "scripts": {
-    "start": "jest --watch npm jest"
+    "start": "jest"
   },
   "author": "Gloria",
   "license": "ISC",
