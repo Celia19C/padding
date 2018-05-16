@@ -9,7 +9,7 @@ Si el tamaño final es menor o igual que la cadena inicial, se devuelve sin toca
 
 */
 
-function paddingLeft(word, number, character) {
+function paddingLeft(word, number, character = ' ') {
 
 	var wordSplitted = word.split();
 	var spaces = number - word.length;
@@ -17,9 +17,9 @@ function paddingLeft(word, number, character) {
 		for (var i = 0; i < spaces; i++) {
 			if (character){
 			wordSplitted.unshift(character)}
-			else {
-			wordSplitted.unshift(' ');
-			}
+			// else {
+			// wordSplitted.unshift(' ');
+			// } Es lo mismo que ponerlo en el argumento. Ese character = ' ' significa que si no hay character, por defecto mete espacio. Y así te ahorras este else.
 		}
 		return wordSplitted.join('');
 	}
