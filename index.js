@@ -9,7 +9,7 @@ Si el tamaño final es menor o igual que la cadena inicial, se devuelve sin toca
 
 */
 
-function paddingLeft(word, number, character) {
+function paddingLeft(word, number, character = ' ') {
 	var wordSplitted = word.split();
 	var spaces = number - word.length;
 	if (spaces > 0) {

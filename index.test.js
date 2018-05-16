@@ -5,10 +5,10 @@ describe('Padding-left App', () => {
         expect(paddingLeft("hola", 3)).toBe("hola");
     })
     test('should fill the word with spaces before the word if the argument is bigger than the word length', function () {
-        expect(paddingLeft('hola', 5, ' ')).toBe(' hola');
+        expect(paddingLeft('hola', 5)).toBe(' hola');
     });
     test('should fill the word with more spaces before the word if the argument is bigger than the word length', function () {
-        expect(paddingLeft('hola', 8, ' ')).toBe('    hola');
+        expect(paddingLeft('hola', 8)).toBe('    hola');
     });
     test('should fill the word with character before the word if the argument is bigger than the word length', function () {
         expect(paddingLeft('hola', 8, 'x')).toBe('xxxxhola');
