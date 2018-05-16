@@ -10,7 +10,12 @@ Si el tamaño final es menor o igual que la cadena inicial, se devuelve sin toca
 */
 
 function paddingLeft(word, number) {
+	if (word.length < number) {
+		return ' ' + word;
+	}
 	return word;
+} 
+	
 
-}
+
 module.exports = paddingLeft;
