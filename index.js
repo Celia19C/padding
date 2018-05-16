@@ -9,12 +9,19 @@ Si el tamaño final es menor o igual que la cadena inicial, se devuelve sin toca
 
 */
 
-function paddingLeft(word, number) {
+function paddingLeft(word, number, character) {
 	var wordSplitted = word.split();
 	var spaces = number - word.length;
 	if (spaces > 0) {
 		for (var i = 0; i < spaces; i++) {
-			wordSplitted.unshift(' ');
+			if (character) {
+				wordSplitted.unshift(character);
+			}
+			else {
+				wordSplitted.unshift(' ');
+
+
+			}
 		}
 		return wordSplitted.join('');
 	}
